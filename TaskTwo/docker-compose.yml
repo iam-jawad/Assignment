@@ -1,0 +1,53 @@
+version: "3"
+
+services: 
+  elasticsearch:
+    image: elasticsearch:7.6.2
+    container_name: elasticsearch
+    environment: 
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    networks: 
+      - elk-network
+
+  logstash:
+    image: logstash:7.6.2
+    container_name: logstash
+    depends_on: 
+      - elasticsearch
+    ports:
+      - 12201:12201/udp
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro 
+    networks:
+      - elk-network
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: kibana:7.6.2
+    container_name: kibana
+    depends_on:
+      - logstash
+    ports: 
+      - 5601:5601
+    networks: 
+      - elk-network
+    depends_on:
+      - elasticsearch
+
+  httpd:
+    image: httpd:latest
+    container_name: apache
+    depends_on:
+      - logstash
+    ports:
+      - 80:80
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:12201"
+
+networks: 
+  elk-network:
+    driver: bridge
