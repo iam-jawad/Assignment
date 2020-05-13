@@ -39,7 +39,7 @@ do
     ;;
    7)
     echo "List the Folders with their size in (MBs), Sorted descending order."
-    ls -hsd */ | sort -nr
+    du -sh -- */ | sort -nr
     ;;
    8)
     break
