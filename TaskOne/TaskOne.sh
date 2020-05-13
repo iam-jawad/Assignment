@@ -1,3 +1,6 @@
+#Adding entry in log file
+echo "Script started at: Time: $(date)." >> ./Debug.log
+
 #Infinite loop to keep script running untill user stop  it forcefully 
 while :
 do
