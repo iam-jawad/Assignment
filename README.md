@@ -1,6 +1,6 @@
 # Assignment
 ## Task One
-TaskOne Folder contains TaskOne.sh file which contain main script of task one and Debug.log file which contain logs of TaskOne.sh file, rest of the files and folders inside TaskOne folder is dummy files and folders so that, user can see clear results while runing option 6 and 7 in script.
+TaskOne Folder contains TaskOne.sh file which contain main script of task one and Debug.log file which contain logs of TaskOne.sh file, You can find screenshots of the script's result in screenshots folder, rest of the files and folders inside TaskOne folder is dummy files and folders so that, user can see clear results while runing option 6 and 7 in script.
 
 ## Task Two
 TaskTwo folder contains two files docker-compose.yml which have code to create five containers
