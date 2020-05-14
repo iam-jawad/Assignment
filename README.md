@@ -9,7 +9,7 @@ TaskTwo folder contains two files docker-compose.yml which have code to create f
 3) Elasticsearch
 ====Two Tier Open Source Ecommerence Application===
 4) Nopcommerce
-5) MS SQL Server
+5) MS SQL Server<br />
 Just run "docker-compose up -d" command and every thing will be up and running.
 And second file you will find in this folder is logstash.congf.
 
