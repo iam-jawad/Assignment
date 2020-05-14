@@ -13,7 +13,7 @@ TaskTwo folder contains two files docker-compose.yml which have code to create f
 Just run "docker-compose up -d" command and every thing will be up and running.
 And second file you will find in this folder is logstash.congf.<br />
 
-You can see results of Task Two by visiting following urls, its live on my AWS account on a ec2 instance.
+You can see results of Task Two by visiting following urls, its live on my AWS account on a ec2 instance.<br />
 Kibana<br />
 http://ec2-54-176-32-229.us-west-1.compute.amazonaws.com:5601/<br />
 Nopcommerce<br />
