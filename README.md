@@ -6,15 +6,15 @@ TaskOne Folder contains TaskOne.sh file which contain main script of task one an
 TaskTwo folder contains two files docker-compose.yml which have code to create five containers
 1) Kibana
 2) Logstash
-3) Elasticsearch
+3) Elasticsearch<br />
 ====Two Tier Open Source Ecommerence Application===
 4) Nopcommerce
 5) MS SQL Server<br />
 Just run "docker-compose up -d" command and every thing will be up and running.
-And second file you will find in this folder is logstash.congf.
+And second file you will find in this folder is logstash.congf.<br />
 
 You can see results of Task Two by visiting following urls, its live on my AWS account on a ec2 instance.
-Kibana
-http://ec2-54-176-32-229.us-west-1.compute.amazonaws.com:5601/
-Nopcommerce
+Kibana<br />
+http://ec2-54-176-32-229.us-west-1.compute.amazonaws.com:5601/<br />
+Nopcommerce<br />
 http://ec2-54-176-32-229.us-west-1.compute.amazonaws.com
